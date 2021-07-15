@@ -1,0 +1,12 @@
+.sender{
+    text-align: right;
+}
+.date{
+    text-align: right;
+}
+
+body{
+    margin: 5% 20%;
+    text-align: justify;
+    line-height: 25px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <div id="div1">
+        <select id="colors">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+        <input type="button" value="Apply" onclick="clickfun()">
+    </div>
+    <div>
+        <h2 id="text1">Radio Button</h2>
+    </div>
+    <div onchange="radiofun()">
+        <input type="radio" id="one" name="color" value="Red">Red
+        <input type="radio" id="two" name="color" value="Green">Green
+        <input type="radio" id="three" name="color" value="Blue">Blue
+    </div>
+    <div>
+        <h2 id="text2">Checkbox</h2>
+    </div>
+    <div>
+        <input type="checkbox" id="checkbox1" name="font" value="Fantasy">Fantasy
+        <input type="checkbox" id="checkbox2" name="font" value="Monospace">Monospace
+        <input type="checkbox" id="checkbox3" name="font" value="sans-serif">sans-serif
+        <input type="button" value="click" onclick="checkfun()">
+    </div>
+
+    <script src="js/demo.js"></script>
+</body>
+</html>
