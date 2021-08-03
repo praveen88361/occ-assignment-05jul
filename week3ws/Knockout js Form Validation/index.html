@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout-validation/2.0.4/knockout.validation.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Knockout js</title>
+</head>
+
+<body>
+    <form name="form" method="GET" data-bind="submit:Submit">
+        <div class="container">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" data-bind="value:firstName" name="fname">
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" data-bind="value:lastName" name="lname">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" data-bind="value:emailaddress" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender" data-bind="value:gender">
+                    <option value="" name="gender">Select</option>
+                    <option value="male" name="gender">Male</option>
+                    <option value="female" name="gender">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="course">
+                <label>Course</label>
+                <p>
+                    <input type="checkbox" data-bind="checked:course" name="chbox" value="HTML"> <b>HTML</b>
+                    <input type="checkbox" data-bind="checked:course" name="chbox" value="CSS"> <b>CSS</b>
+                </p>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
